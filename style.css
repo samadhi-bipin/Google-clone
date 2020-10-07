@@ -1,0 +1,241 @@
+*,*:after ,*:before { box-sizing:border-box; }
+
+
+html{
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+   
+}
+
+body{
+    padding: 0;
+    margin: 0 2em;
+    
+}
+
+
+/* unodered .lists */
+
+a{
+   text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* nav-bar */
+#nav-bar{
+   display: flex;
+   justify-content: flex-end;
+   min-height: 3vh;
+   margin-top: 1em;
+   font-family: Arial, Helvetica, sans-serif;
+   
+  
+   
+}
+
+#nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2em;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.links{
+    display: inline-block;
+    padding: 0 .5em;
+   
+}
+
+.links img{
+    border-radius: 50%;
+}
+
+/* ************************************** */
+
+
+/*main body*/
+
+#main-body{
+   margin: 1em 0;
+   padding: 0;
+   min-height: 65vh;
+   width: 100%;
+   min-width: 367px;
+}
+
+/* ******************** */
+
+/* search menu section */
+
+#google-logo{
+    margin-bottom: 1.5em;
+    
+}
+#search-menu{
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+          
+
+}
+
+#search-bar input{
+    
+    padding: 1em  15em;
+    width: 100%;
+    max-width: 884px;
+    border-radius: 2em;
+    border: .1px solid rgb(226, 226, 226);
+    text-indent: -180px;
+    
+}
+
+@media only screen and (max-width:557px){
+
+    #search-bar input{
+    
+        width: 80%;
+        display: block;
+        margin:0 auto ;
+
+        
+    }
+    
+
+  
+}
+
+
+#search-bar input:hover{
+
+    box-shadow: 3px 2px 4px 1px #d3cece,-3px -2px 4px 1px#f8f5f5 ;
+
+   
+
+}
+
+#submit-buttons{
+  margin-top: 2.3em;
+  padding: 0;
+  
+
+
+}
+#submit-buttons form{
+  
+  /* padding: 0 2em; */
+  width: 104%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+#submit-buttons form input{
+  padding: .6em 1.4em;
+  border-radius: .4em;
+  border-style: none;
+  font-size: .9rem;
+  
+  
+}
+
+
+#submit-buttons form input:hover{
+    cursor: pointer;
+    background: rgb(247, 246, 246, 0.8) 90%;
+    border:  0.01px solid gray;
+   
+    
+  
+}
+
+#language{
+    margin: 2em 0;
+}
+
+/* ************************* */
+
+
+
+/* footer */
+
+/* when i added postion:absolute the layout adjusted automatically.
+   Flexr wrap occupied the space without pushhing the element downward. 
+   Prior my code was not able to occupy the space and pushed the element below which overflowed.
+    */
+footer{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   font-family: Arial, Helvetica, sans-serif; 
+   display: flex;
+   flex-direction: column;
+   color: rgb(119, 116, 116);
+    
+}
+#country{
+    
+    background: rgba(218, 215, 215, 0.4);
+    padding: 1em;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+
+     
+}
+
+#contacts{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background: rgba(218, 215, 215, 0.4);
+   flex-wrap: wrap;
+   border-top: rgb(190, 187, 187, 0.3) solid 1px;
+   
+}
+
+
+@media only screen and (max-width: 1158px){
+
+    #contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+     
+        
+     }
+    
+
+}
+
+.footer-lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+footer #contacts .links{
+    color: rgb(119, 116, 116);
+}
+footer #contacts .links:hover{
+    text-decoration: underline;
+}
+d
